@@ -1,0 +1,22 @@
+.register-container {
+    padding: 5%;
+}
+
+.register-container .card {
+    min-height: 40vh;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.register-container .bi-hand-index {
+    animation: bounce 1s infinite;
+}

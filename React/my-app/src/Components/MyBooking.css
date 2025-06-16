@@ -1,0 +1,82 @@
+.booking-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    /* align-items: center; Center vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+  }
+  
+  .booking-container .card {
+    min-width: 70%;
+    max-width: 80%;
+    min-height: 25%;
+    max-height: 70%;
+    text-align: center; /* Center text inside the card */
+    padding: 20px; /* Add some padding for better spacing */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+    border-radius: 10px; /* Optional: Rounds the corners */
+    background: #fff; /* Ensure card has a white background */
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .list-group {
+    display: grid; /* Use CSS Grid for horizontal layout */
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+    gap: 20px; /* Space between columns */
+    margin-top: 20px;
+  }
+  
+  .list-group-item {
+    display: contents; /* Allow the child elements to span across grid columns */
+  }
+  
+  .list-group-item div {
+    display: flex;
+    flex-direction: column; /* Stack labels and values vertically */
+  }
+  
+  .list-group-item label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .list-group-item span {
+    font-weight: normal;
+  }
+  
+  .list-group-item span, .list-group-item label {
+    margin-right: 10px; /* Adds some space between label and value */
+  }
+  
+  /* Optional: Styling for each row's details */
+  .list-group-item div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-group-item div span {
+    font-size: 14px;
+  }
+  
+  .list-group-item div span:last-child {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust grid layout for smaller screens */
+    .list-group {
+      grid-template-columns: 1fr 1fr; /* Two columns for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust grid layout for very small screens */
+    .list-group {
+      grid-template-columns: 1fr; /* One column for very small screens */
+    }
+  }
+  

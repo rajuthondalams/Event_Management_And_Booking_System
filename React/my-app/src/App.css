@@ -1,0 +1,41 @@
+body {
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  color: rgb(168, 49, 49);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: none;
+  background: linear-gradient(white,#fc8019);
+  /* background: linear-gradient(#e4decd,#c2b490); */
+  /* background: linear-gradient(white,#c2b490); */
+  /* background: linear-gradient(#c2b490,black); */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  width: 100%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+}

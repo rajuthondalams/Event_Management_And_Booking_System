@@ -1,0 +1,87 @@
+.Home-container .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 85%;
+  margin-bottom: 10%;
+}
+.Home-container .img-size{
+  height: 80vh;
+  width: 100%;
+}
+
+.Home-container .overlay-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 3rem;
+  border: none;
+  text-align: center;
+}
+
+.Home-container .overlay-button {
+  width: auto;
+  position: absolute;
+  background-color:  #ed9834;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: whitesmoke;
+  box-shadow: 3px 3px 3px rgba(77, 90, 50, 0.5);
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border-color: white;
+  cursor: pointer;
+}
+
+.Home-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.Home-container .card{
+  height: 60%;
+  width: 60%;
+}
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .main-img {
+    width: 100%;
+  }
+}
+.Home-container .left-section {
+  background-color: #eab676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.Home-container .social-icons i {
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Home-container .social-icons i:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .left-section {
+    padding: 40px;
+  }
+}

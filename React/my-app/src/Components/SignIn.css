@@ -1,0 +1,109 @@
+.signin-container {
+    width: 100%;
+    height: 100vh; /* Full viewport height to ensure vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-container .container-fluid {
+    width: 100%;
+    max-width: 500px; /* Limit width for better form alignment */
+    padding: 20px;
+}
+
+.signin-container input {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    padding-right: 40px; /* Space for the password toggle icon */
+}
+
+.signin-container div {
+    margin-top: 10px;
+}
+
+.signin-container button {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;  /* Reduced padding for a smaller button */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Use auto width for the button to shrink to content size */
+    max-width: 200px; /* Set a max-width to limit the button's size */
+}
+
+.password-input-container {
+    position: relative;
+    width: 100%; /* Full-width container for the password input */
+}
+
+.password-input-container input {
+    width: 100%;
+    height: 40px;
+    padding-right: 40px; /* To make space for the toggle icon */
+}
+
+.password-toggle-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: auto !important; /* Ensure the button's width is adjusted to the icon */
+    height: auto !important; /* Ensure the button's height is adjusted to the icon */
+}
+
+.password-toggle-btn svg {
+    width: 10px;
+    height: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+.password-toggle-btn:hover svg {
+    color: #007bff;
+}
+
+.signin-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-top: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.nav-link.active {
+    color: #0056b3;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.mt-3 {
+    margin-top: 20px;
+}

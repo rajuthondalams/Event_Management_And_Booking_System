@@ -1,0 +1,44 @@
+.user-container {
+    display: flex;
+    /* align-items: center; Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+}
+
+.user-container .card {
+    margin-top: 2%;
+    min-width: 60%;
+    max-width: 80%;
+    min-height: 30%;
+    max-height: 70%;
+    text-align: center; /* Center text inside the card */
+    padding: 20px; /* Add some padding for better spacing */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+    border-radius: 10px; /* Optional: Rounds the corners */
+    background: #fff; /* Ensure card has a white background */
+}
+
+/* Input field styling */
+.user-container input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    font-size: 16px;
+}
+
+/* Ensure text inside input remains visible */
+.user-container input::placeholder {
+    color: gray; /* Light gray placeholder text */
+}
+
+.user-container input:focus {
+    outline: none;
+    border-color: #007bff; /* Bootstrap primary blue */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+

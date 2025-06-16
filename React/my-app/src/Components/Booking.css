@@ -1,0 +1,36 @@
+.booking-container {
+    margin: 0;
+    padding: 0;
+}
+
+.booking-container .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.booking-container .card {
+    min-height: auto;
+    min-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.booking-container .state-drop{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.booking-container select{
+    background-color: white;
+    color: black;
+    min-width: 20%;
+}
+.btn {
+    margin: 5px; /* Adjust as needed */
+    padding: 8px 15px; /* Adjust button padding */
+  }
+  

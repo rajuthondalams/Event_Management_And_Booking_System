@@ -1,0 +1,99 @@
+/* Remove unnecessary top space and ensure full viewport height */
+.login-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0; /* Remove padding to eliminate top space */
+    margin: 0;  /* Remove margin to ensure full height */
+}
+
+/* Adjust the card size and prevent scrolling */
+.login-container .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; /* Take up the full width */
+    max-width: 1200px; /* Optional: limit max width */
+    padding: 0;
+}
+
+.login-container .card {
+    display: flex;
+    width: 100%; /* Make sure card takes full width of its container */
+    max-width: 1000px; /* Set a fixed max width for the card */
+    height: 600px; /* Set a fixed height to prevent it from being too tall */
+    overflow: hidden; /* Prevent scrolling */
+    /* background-color: #c9af98; */
+    background: linear-gradient(to right, #fc8019, #ffcd85);
+    /* background: linear-gradient(to right, #fc8019, #f68b1e);  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Ensure the row and columns are properly set to take up the full height */
+.login-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.login-container .col-7,
+.login-container .col-5 {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Center content horizontally */
+    height: 100%;
+}
+
+/* Image Section */
+.login-container .col-7 {
+    flex: 1 0 58.33%;
+    overflow: hidden;
+}
+
+.login-container .col-7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container and maintains aspect ratio */
+}
+
+/* Form Section */
+.login-container .col-5 {
+    flex: 1 0 41.67%;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Center form content and make it responsive */
+.login-container form {
+    width: 100%;
+    max-width: 400px; /* Adjust width as needed */
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Password input with toggle button */
+.password-input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password-toggle-btn {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+}
